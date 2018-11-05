@@ -1,0 +1,118 @@
+<html>
+
+<body>
+    <!-- paragraph is block -->
+    <!-- <p>Hi, what's up?</p>
+        <p>i get my own line, too</p> -->
+
+
+    <!-- inline -->
+    <!-- you can use inline elements inside of a block element, but not vice versa -->
+    <!-- another way of putting this is that inline elements can be NESTED inside of block elements -->
+    <!-- <div>
+            <span>Hey. i'm inline.</span>
+            <span>  Hey, I'm still gonna be on the same line.</span> 
+        </div> -->
+
+    <!-- ex -->
+    <!-- <p>
+            Here's this big <u>long</u> paragraph, yadadajowjefwef.
+        </p> -->
+
+    <!-- can you put block inside of inline? -->
+    <!-- at this point, no. -->
+    <!-- <span>
+            <div>Hey, I'm block</div>
+        </span> -->
+
+    <!-- defining a form - you need to have a form tag with nested inputs -->
+    <!-- another way to say nested inputs is control tags -->
+    <!-- <form> -->
+    <!-- input is self-closing -->
+    <!-- control tags "control" the data that is inputted -->
+    <!-- there's more than one kind of control tag - input, select, textarea, radio, checkbox, submit button - anything that is nested inside of the form -->
+    <!-- /> is not necessary for self-closing tags, but I recommend you use it. -->
+    <!-- <input type="text" placeholder="Make sure you enter it Lastname, Firstname" disabled />
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+            <textarea> -->
+    <!-- large chunks of texts, like a facebook post f.ex. -->
+    <!-- </textarea> -->
+
+    <!-- lets do age group -->
+    <!-- <select>
+                <option> -->
+    <!-- 18 - 25
+                </option>
+                <option>
+                    26 - 35
+                </option>
+                <option>
+                    35+
+                </option>
+            </select> -->
+
+    <!-- radio - one selection at a time, no multiple selection -->
+    <!-- gender is is a good example because you have to choose one. -->
+    <!-- <input type="radio" value="Male">Male -->
+    <!-- <input type="radio" value="Female">Female -->
+    <!-- values save the data for the form -->
+    <!-- we can change our attributes to display a different control or save a different value. -->
+
+    <!-- <button type="submit">Submit</button> -->
+    <!-- once the user hits submit, our values that we've selected get saved -->
+
+    <!-- let's make a better form using labels -->
+
+    <!-- <div>
+                <label for="firstName">Your First Name...</label>
+                <input id="firstName" type="text" placeholder="Enter your firstName name here..." />
+
+                <div>
+                    Is this a new line?
+                </div>
+
+            </div>
+
+            <div>
+                    <label for="lastName">Your Last Name</label>
+                    <input id="lastName" type="text" placeholder="Enter your last name here..." />
+            </div> -->
+
+    <!-- <div> -->
+    <!-- <div>
+                    <label>This field...</label>
+                </div>
+
+                <div>
+                    <input type="text" placeholder="your text here..." />
+                </div> -->
+
+    <!-- <label for="myFavoriteFootball">
+                    My Favorite Football Team
+                    <input id="myFavoriteFootball" type="text" />
+                </label>
+
+                <label>My Favorite Football Team</label>
+                <input type="text" /> -->
+
+    <!-- </div> -->
+
+    <!-- </form> -->
+
+    <!-- action specifies where our data should be sent. If we don't specify, then it defaults to '/' -->
+    <!-- when you submit your form, the page is going to reload by default. -->
+    <form action='/'>
+
+        <!-- using the name attribute -->
+        <label>First Name</label>
+        <input name="firstName" id="firstName" type="text" value="https://github.com/yourname" />
+        <div>
+            <!-- When I hit the submit button, the browser will serialize my data -->
+            <input type="submit" />
+        </div>
+    </form>
+</body>
+
+</html>
